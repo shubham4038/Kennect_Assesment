@@ -1,5 +1,5 @@
 //For Loop
-//When we have to execute a block of code repeatedly we use For loop. Below is syntax and implementation of For Loop
+//When we have to execute a block of code repeatedly we use For loop. Below implementation of For Loop
 
 // Execution
 let arr =[1,2,3,4,5]

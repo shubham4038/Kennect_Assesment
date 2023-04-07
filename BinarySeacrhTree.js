@@ -1,3 +1,8 @@
+//Binary Seach tree
+/* A binary search tree follows some order to arrange the elements. In a Binary search tree, the value of left node must be smaller than the parent node,
+and the value of right node must be greater than the parent node. This rule is applied recursively to the left and right subtrees of the root.
+ */
+
 // Implementation of Insertion in BST
 
 class Node{
@@ -22,7 +27,6 @@ class BST{
         this.count++;
 
         const newNode = new Node(value);
-
         const searchTree = (node)=>{
             if(value < node.value){
                 if(!node.left){
@@ -44,10 +48,33 @@ class BST{
     }
 }
 
-const bst = new BST(12)
-bst.insert(12)
-bst.insert(13)
-bst.insert(16)
+const jc = new BST(20);
+jc.insert(12);
+jc.insert(29)
+jc.insert(25);
+console.log(jc.Node);
 
-console.log(bst)
+
+/* Recursion
+Recursion is a process of calling itself. A function that calls itself is called a recursive function. from the above example we can see that
+SEARCHTREE is a recusive function. Below is a small example of Recusrive function
+*/
+
+function countDown(number) {
+    console.log(number);
+    const newNumber = number - 1;
+    if (newNumber > 0) {
+        countDown(newNumber);
+    }
+}
+countDown(4);
+
+//Here countDown is recursive function.
+
+
+
+
+
+
+
 
